@@ -2,17 +2,14 @@ package Ej_1_DelExamen.Entrega_2;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observable;
-import java.util.Observer;
-
 
 /**
  * Class for a restaurant that can notify observers.
  * This class implements the RestaurantComponent and Subject interfaces.
  */
-public class RestaurantWithObserver extends Observable implements RestaurantComponent, Subject {
+public class RestaurantWithObserver implements RestaurantComponent, Subject {
 
-    private List<Observer> observers = new ArrayList<>();
+    private List<Ej_1_DelExamen.Entrega_2.Observer> observers = new ArrayList<>();
 
 
     /**
@@ -20,7 +17,7 @@ public class RestaurantWithObserver extends Observable implements RestaurantComp
      * @param o The observer to be added.
      */
     @Override
-    public void addObserver(Observer o) {
+    public void addObserver(Ej_1_DelExamen.Entrega_2.Observer o) {
         observers.add(o);
     }
 
@@ -31,7 +28,7 @@ public class RestaurantWithObserver extends Observable implements RestaurantComp
      * @param o The observer to be removed.
      */
     @Override
-    public void removeObserver(Observer o) {
+    public void removeObserver(Ej_1_DelExamen.Entrega_2.Observer o) {
         observers.remove(o);
     }
 
@@ -42,8 +39,8 @@ public class RestaurantWithObserver extends Observable implements RestaurantComp
      */
     @Override
     public void notifyObservers() {
-        for (Observer observer : observers) {
-            observer.update(this, null);
+        for (Ej_1_DelExamen.Entrega_2.Observer observer : observers) {
+            observer.update();
         }
     }
 
