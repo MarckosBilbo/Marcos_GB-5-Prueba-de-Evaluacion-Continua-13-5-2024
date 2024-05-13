@@ -1,8 +1,8 @@
 # Marcos_GB-5-Prueba-de-Evaluacion-Continua-13-5-2024
 
-Repositorio-->
+Repositorio-->https://github.com/MarckosBilbo/Marcos_GB-5-Prueba-de-Evaluacion-Continua-13-5-2024
 
-Este proyecto es un sistema de gestión de restaurantes implementado en Java. El sistema utiliza varios patrones de diseño y está organizado en cuatro paquetes principales.
+-Este proyecto es un sistema de gestión de restaurantes implementado en Java. El sistema utiliza varios patrones de diseño y está organizado en cuatro paquetes principales.
 
 ## Parte 1: Ej_1_DelExamen.Entrega_1
 
